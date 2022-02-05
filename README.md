@@ -11,5 +11,5 @@ This branch is for providing a lavaplayer natives package that is compatable wit
         maven { url "https://jitpack.io" }
    }
    dependencies {
-         implementation 'com.github.aikaterna:lavaplayer-natives:original'
+         implementation 'com.github.aikaterna:lavaplayer-natives:original-SNAPSHOT'
    }```
