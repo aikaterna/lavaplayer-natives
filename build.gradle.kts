@@ -10,11 +10,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
-}
-
 val sourcesJar by tasks.registering(Jar::class) {
     archiveClassifier.set("sources")
     from(sourceSets.main.get().allSource)
@@ -27,8 +22,4 @@ publishing {
             artifact(sourcesJar.get())
         }
     }
-}
-
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
 }
