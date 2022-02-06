@@ -12,4 +12,5 @@ This branch is for providing a lavaplayer natives package that is compatable wit
    }
    dependencies {
          implementation 'com.github.aikaterna:lavaplayer-natives:original-SNAPSHOT'
-   }```
+   }
+```
